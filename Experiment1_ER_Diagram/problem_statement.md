@@ -1,143 +1,39 @@
-# ER Diagram Workshop – Submission Template
+# Experiment 1: Entity-Relationship (ER) Diagram
 
-## Objective
-To understand and apply ER modeling concepts by creating ER diagrams for real-world applications.
+## REGISTER NUMBER:212223240085
+## DEVOLOPED BY: MARXIN LIJO M
 
-## Purpose
-Gain hands-on experience in designing ER diagrams that represent database structure including entities, relationships, attributes, and constraints.
+## Scenario Chosen:
 
----
+## 1)RESTARUANT
+## 2)CITY LIBARAY
 
-# Scenario A: City Fitness Club Management
+## ER Diagram:
 
-**Business Context:**  
-FlexiFit Gym wants a database to manage its members, trainers, and fitness programs.
 
-**Requirements:**  
-- Members register with name, membership type, and start date.  
-- Each member can join multiple programs (Yoga, Zumba, Weight Training).  
-- Trainers assigned to programs; a program may have multiple trainers.  
-- Members may book personal training sessions with trainers.  
-- Attendance recorded for each session.  
-- Payments tracked for memberships and sessions.
+## CITY LIBRARY ERD:
 
-### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
+<img width="786" height="782" alt="image" src="https://github.com/user-attachments/assets/f8640d49-b720-4c80-860b-2dd8c72d98ab" />
 
-### Entities and Attributes
+## RESTAURANT MANAGMENT:
+<img width="779" height="783" alt="image" src="https://github.com/user-attachments/assets/f99e9594-b975-46dd-b73b-3378d1b017f4" />
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+## ER:
 
-### Relationships and Constraints
+<img width="780" height="460" alt="image" src="https://github.com/user-attachments/assets/10521694-2254-4fac-bfb9-86bebbac4e39" />
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
 
-### Assumptions
-- 
-- 
-- 
 
----
 
-# Scenario B: City Library Event & Book Lending System
 
-**Business Context:**  
-The Central Library wants to manage book lending and cultural events.
 
-**Requirements:**  
-- Members borrow books, with loan and return dates tracked.  
-- Each book has title, author, and category.  
-- Library organizes events; members can register.  
-- Each event has one or more speakers/authors.  
-- Rooms are booked for events and study.  
-- Overdue fines apply for late returns.
+## RESULT
+The ER model successfully captures the core components of a city library management system, including members, books, librarians, staff, borrowing records, fines, and administrative operations. It clearly defines:
 
-### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+Entities such as MEMBER, BOOK, LIBRARIAN, STAFF, BORROW RECORD, FINE, SECTION, and CATALOG.
 
-### Entities and Attributes
+Relationships like BORROWS, ISSUES, RETURNS, MANAGES, and MAINTAINS to represent the interactions between entities.
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+Attributes that support efficient tracking of book details, borrowing history, fine amounts, and member information.
 
-### Relationships and Constraints
-
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
-
-### Assumptions
-- 
-- 
-- 
-
----
-
-# Scenario C: Restaurant Table Reservation & Ordering
-
-**Business Context:**  
-A popular restaurant wants to manage reservations, orders, and billing.
-
-**Requirements:**  
-- Customers can reserve tables or walk in.  
-- Each reservation includes date, time, and number of guests.  
-- Customers place food orders linked to reservations.  
-- Each order contains multiple dishes; dishes belong to categories (starter, main, dessert).  
-- Bills generated per reservation, including food and service charges.  
-- Waiters assigned to serve reservations.
-
-### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
-
-### Entities and Attributes
-
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-
-### Relationships and Constraints
-
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
-
-### Assumptions
-- 
-- 
-- 
-
----
-
-## Instructions for Students
-
-1. Complete **all three scenarios** (A, B, C).  
-2. Identify entities, relationships, and attributes for each.  
-3. Draw ER diagrams using **draw.io / diagrams.net** or hand-drawn & scanned.  
-4. Fill in all tables and assumptions for each scenario.  
-5. Export the completed Markdown (with diagrams) as **a single PDF**
+Constraints (1:N, M:N) that accurately reflect real-world library operations, enabling many-to-many or one-to-many relationships as needed.
